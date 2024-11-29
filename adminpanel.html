@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    1
+    <title>TaskRabbit Clone Admin Panel</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+
+      header {
+        background-color: #f0f0f0;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .logo {
+        font-size: 24px;
+        font-weight: bold;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+
+      nav li {
+        margin-right: 20px;
+      }
+
+      .user-info {
+        display: flex;
+        align-items: center;
+      }
+
+      .user-info img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        margin-left: 10px;
+      }
+
+      .dashboard-section {
+        padding: 20px;
+      }
+
+      .dashboard-stats {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .stat {
+        text-align: center;
+        padding: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+
+      .sidebar {
+        width: 200px;
+        background-color: #f0f0f0;
+        padding: 20px;
+        height: 100vh;
+      }
+
+      .sidebar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+      }
+
+      .sidebar li {
+        margin-bottom: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="logo.png" alt="TaskRabbit Clone Logo" />
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Vendors</a></li>
+        </ul>
+      </nav>
+      <div class="user-info">
+        <p>Welcome, Admin!</p>
+        <img src="user-avatar.png" alt="User Avatar" />
+      </div>
+    </header>
+
+    <main>
+      <div class="dashboard-section">
+        <h1>Dashboard</h1>
+        <div class="dashboard-stats">
+          <div class="stat">
+            <h2>Pending Orders</h2>
+            <p>0</p>
+          </div>
+          <div class="stat">
+            <h2>Active Orders</h2>
+            <p>0</p>
+          </div>
+          <div class="stat">
+            <h2>Delivered Orders</h2>
+            <p>0</p>
+          </div>
+          <div class="stat">
+            <h2>Cancelled Orders</h2>
+            <p>0</p>
+          </div>
+          <div class="stat">
+            <h2>Vendor</h2>
+            <p>1</p>
+          </div>
+        </div>
+        <div class="dashboard-analytics"></div>
+      </div>
+
+      <div class="sidebar">
+        <ul>
+          <li><a href="#">Dashboard</a></li>
+          <li><a href="#">Orders</a></li>
+          <li><a href="#">Vendors</a></li>
+        </ul>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
